@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instragram Photo feed</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light">
+    <nav class="navbar  bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand">Instagram</a>
+            <div class="right-side">
+                <div class="dropdown">
+                    <button class="btn btn-success" data-toggle="modal" data-target="#createModal">Create a new post</button>
+                    <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-cog"></i>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="main-content">
+        <div class="custom-navs bg-white p-2">
+            <div class="container">
+                <ul class="nav nav-pills justify-content-center" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true"><i class="fa fa-th"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false"><i class="fa fa-list"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container mt-2">
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 p-1">
+                            <div class="post-image">
+                                <a  data-toggle="modal" data-target="#exampleModal">
+                                    <img
+                                    src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg"
+                                    class="w-100 custom-max-height"
+                                    />
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <div class="middle">
+                                                <p>VER MÁS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 p-1">
+                            <div class="post-image">
+                                <a  data-toggle="modal" data-target="#exampleModal">
+                                    <img
+                                    src="https://mdbootstrap.com/img/Photos/Vertical/mountain1.jpg"
+                                    class="w-100 shadow-1-strong rounded custom-max-height"
+                                    alt=""
+                                />
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <div class="middle">
+                                                <p>VER MÁS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 p-1">
+                            <div class="post-image">
+                                <a  data-toggle="modal" data-target="#exampleModal">
+                                    <img
+                                    src="https://mdbootstrap.com/img/Photos/Vertical/mountain2.jpg"
+                                    class="w-100 shadow-1-strong rounded custom-max-height"
+                                    alt=""
+                                />
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <div class="middle">
+                                                <p>VER MÁS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    
+                        <div class="col-lg-7 col-md-12 p-1">
+                            <div class="post-image">
+                                <a  data-toggle="modal" data-target="#exampleModal">
+                                    <img
+                                    src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg"
+                                    class="w-100 shadow-1-strong rounded custom-max-height"
+                                    alt=""
+                                    />
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <div class="middle">
+                                                <p>VER MÁS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-5 col-md-12 p-1">
+                            <div class="post-image">
+                                <a  data-toggle="modal" data-target="#exampleModal">
+                                    <img
+                                        src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+                                        class="w-100 shadow-1-strong rounded custom-max-height"
+                                        alt=""
+                                    />
+                                    <div class="overlay">
+                                        <div class="overlay-content">
+                                            <div class="middle">
+                                                <p>VER MÁS</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    <div class="card mt-4">
+                        <div class="card-header position-relative bg-white">
+                            <div class="item-icon-right">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                            <div class="profile d-flex">
+                                <div class="cover">
+                                    <img class="avatar rounded-circle" src="https://logos-marcas.com/wp-content/uploads/2020/04/Amazon-Logo.png">
+                                </div>
+                                <div class="info ml-2">
+                                    <p class="alias">@txapasta</p>
+                                    <p class="name">Jon Egaña</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body d-relative p-0">
+                            <div class="row">
+                                <div class="col">
+                                    <img width="100%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1280px-Image_created_with_a_mobile_phone.png">
+                                </div>
+                            </div>
+                            <div class="p-3 position-relative">
+                                <div class="item-icon-right">
+                                    <i class="far fa-bookmark "></i>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 d-flex">
+                                        <div class="item-icon">
+                                            <i class="far fa-heart"></i>
+                                        </div>
+                                        <div class="item-icon">
+                                            <i class="far fa-comment"></i>
+                                        </div>
+                                        <div class="item-icon">
+                                            <i class="far fa-share-square"></i>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p>Liked by <span class="liked">4GeeksAcademy</span>, <span class="liked">html5</span>, <span class="liked">Web</span> and <span class="liked">100,000 others</span></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mt-4">
+                        <div class="card-header position-relative bg-white">
+                            <div class="item-icon-right">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                            <div class="profile d-flex">
+                                <div class="cover">
+                                    <img class="avatar rounded-circle" src="https://logos-marcas.com/wp-content/uploads/2020/04/Amazon-Logo.png">
+                                </div>
+                                <div class="info ml-2">
+                                    <p class="alias">@txapasta</p>
+                                    <p class="name">Jon Egaña</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body d-relative p-0">
+                            <div class="row">
+                                <div class="col">
+                                    <img width="100%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1280px-Image_created_with_a_mobile_phone.png">
+                                </div>
+                            </div>
+                            <div class="p-3 position-relative">
+                                <div class="item-icon-right">
+                                    <i class="far fa-bookmark "></i>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 d-flex">
+                                        <div class="item-icon">
+                                            <i class="far fa-heart"></i>
+                                        </div>
+                                        <div class="item-icon">
+                                            <i class="far fa-comment"></i>
+                                        </div>
+                                        <div class="item-icon">
+                                            <i class="far fa-share-square"></i>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p>Liked by <span class="liked">4GeeksAcademy</span>, <span class="liked">html5</span>, <span class="liked">Web</span> and <span class="liked">100,000 others</span></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mt-4">
+                        <div class="card-header position-relative bg-white">
+                            <div class="item-icon-right">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                            <div class="profile d-flex">
+                                <div class="cover">
+                                    <img class="avatar rounded-circle" src="https://logos-marcas.com/wp-content/uploads/2020/04/Amazon-Logo.png">
+                                </div>
+                                <div class="info ml-2">
+                                    <p class="alias">@txapasta</p>
+                                    <p class="name">Jon Egaña</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body d-relative p-0">
+                            <div class="row">
+                                <div class="col">
+                                    <img width="100%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1280px-Image_created_with_a_mobile_phone.png">
+                                </div>
+                            </div>
+                            <div class="p-3 position-relative">
+                                <div class="item-icon-right">
+                                    <i class="far fa-bookmark "></i>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 d-flex">
+                                        <div class="item-icon">
+                                            <i class="far fa-heart"></i>
+                                        </div>
+                                        <div class="item-icon">
+                                            <i class="far fa-comment"></i>
+                                        </div>
+                                        <div class="item-icon">
+                                            <i class="far fa-share-square"></i>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p>Liked by <span class="liked">4GeeksAcademy</span>, <span class="liked">html5</span>, <span class="liked">Web</span> and <span class="liked">100,000 others</span></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mt-4">
+                        <div class="card-header position-relative bg-white">
+                            <div class="item-icon-right">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                            <div class="profile d-flex">
+                                <div class="cover">
+                                    <img class="avatar rounded-circle" src="https://logos-marcas.com/wp-content/uploads/2020/04/Amazon-Logo.png">
+                                </div>
+                                <div class="info ml-2">
+                                    <p class="alias">@txapasta</p>
+                                    <p class="name">Jon Egaña</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body d-relative p-0">
+                            <div class="row">
+                                <div class="col">
+                                    <img width="100%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1280px-Image_created_with_a_mobile_phone.png">
+                                </div>
+                            </div>
+                            <div class="p-3 position-relative">
+                                <div class="item-icon-right">
+                                    <i class="far fa-bookmark "></i>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 d-flex">
+                                        <div class="item-icon">
+                                            <i class="far fa-heart"></i>
+                                        </div>
+                                        <div class="item-icon">
+                                            <i class="far fa-comment"></i>
+                                        </div>
+                                        <div class="item-icon">
+                                            <i class="far fa-share-square"></i>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p>Liked by <span class="liked">4GeeksAcademy</span>, <span class="liked">html5</span>, <span class="liked">Web</span> and <span class="liked">100,000 others</span></p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL SHOW POST-->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header  position-relative bg-white">
+                    <div class="item-icon-right">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </div>
+                    <div class="profile d-flex">
+                        <div class="cover">
+                            <img class="avatar rounded-circle" src="https://logos-marcas.com/wp-content/uploads/2020/04/Amazon-Logo.png">
+                        </div>
+                        <div class="info ml-2">
+                            <p class="alias">@txapasta</p>
+                            <p class="name">Jon Egaña</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col">
+                            <img width="100%" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1280px-Image_created_with_a_mobile_phone.png">
+                        </div>
+                    </div>
+                    <div class="p-3 position-relative">
+                        <div class="item-icon-right">
+                            <i class="far fa-bookmark "></i>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 d-flex">
+                                <div class="item-icon">
+                                    <i class="far fa-heart"></i>
+                                </div>
+                                <div class="item-icon">
+                                    <i class="far fa-comment"></i>
+                                </div>
+                                <div class="item-icon">
+                                    <i class="far fa-share-square"></i>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p>Liked by <span class="liked">4GeeksAcademy</span>, <span class="liked">html5</span>, <span class="liked">Web</span> and <span class="liked">100,000 others</span></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL CREATE POST-->
+    <div class="modal fade" id="createModal" tabindex="-1" role="dialog" aria-labelledby="createModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <form id="create-post-form" method="POST">
+                  <textarea id="post-comment" name="comment"></textarea>
+                  <div class="button-actions d-flex">
+                      <button id="add-photo"  class="btn btn-light btn-action"><i class="fa fa-camera"></i></button>
+                      <button id="add-location" class="btn btn-light btn-action"><i class="fa fa-location-arrow"></i></button>
+                  </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-success">Create</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+</body>
+</html>
